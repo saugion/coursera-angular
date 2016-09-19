@@ -16,7 +16,7 @@ function MsgController($scope) {
   		$scope.result = $scope.msg3;
   	}
   	else {
-  		var i = $scope.entireMessage.split(",").length;
+  		var i = $scope.entireMessage.split(",").filter(String).length;
 
 	   	if (i <= 3) {
 	    	$scope.result = $scope.msg1;
