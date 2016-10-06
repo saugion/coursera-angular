@@ -1,0 +1,10 @@
+<ul>
+	<h3 ng-if="dirCtrl.dishes.length">Found items</h3>
+    <li ng-repeat="item in dirCtrl.dishes">
+        {{item.short_name}} --
+        {{item.name}},
+        {{item.description}}
+        <button class="btn btn-warning" ng-click="dirCtrl.dishRemove({index:$index})">Don't want this one!</button>
+    </li>
+</ul>
+<div ng-transclude></div>
