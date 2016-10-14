@@ -1,0 +1,12 @@
+<table class="w3-table">
+  <tr ng-repeat="category in $ctrl.myCategories" class="w3-hover-green">
+    <td>
+      <span class="ink-label green">{{category.short_name}}</span>
+    </td>
+    <td>
+      <a ui-sref="items({ categoryShortName: category.short_name })">
+          {{category.name}}
+      </button>
+    </td>
+  </tr>
+</table>
